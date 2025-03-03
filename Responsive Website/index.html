@@ -3,24 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Educational WebPage</title>
+    <!-- link css file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar background">
-      <ul class="nav-list another">
-        <div class="logo"><img src="img2.webp" alt="logo" /></div>
+    <!-- start of navbar -->
+    <!-- left side of navbar -->
+    <nav class="navbar background h-nav-resp">
+      <ul class="navList v-class-resp">
+        <div class="logo"><img src="logo1.avif" alt="logo" /></div>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <!-- <li><a href="#services">Services</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="rightNav">
-        <input type="text" name="search" id="search" />
+      <!-- right side of navbar -->
+      <div class="rightNav v-class-resp">
+        <input id="search" type="text" name="search" />
         <button class="btn btn-sm">Search</button>
       </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
-    <section class="background firstSection">
+    <!-- end of nav bar -->
+    <!-- ----------------------------------- -->
+    <!-- section 1 start -->
+    <section class="background firstSection" id="home">
       <div class="box-main">
         <div class="firstHalf">
           <p class="text-big">The Future of Education is here</p>
@@ -30,8 +42,8 @@
             educational journey!
           </p>
           <div class="buttons">
-            <button class="btn">Subscribe</button>
-            <button class="btn">Watch Video</button>
+            <button class="btn" id="enrollButton">Enroll</button>
+            <button class="btn" id="exploreButton">Explore</button>
           </div>
         </div>
         <div class="secondHalf">
@@ -39,8 +51,11 @@
         </div>
       </div>
     </section>
+    <!-- section 1 end -->
+    <!-- ---------------------------------------- -->
 
-    <section class="section">
+    <!-- section 2 start -->
+    <section class="section" id="about">
       <div class="paras">
         <p class="para text-big">Education is the key to success</p>
         <p class="sub-para text-small">
@@ -54,16 +69,17 @@
           levels, including early childhood education, primary education,
           secondary education, and tertiary education. Other classifications
           focus on teaching methods.
+        </p>
       </div>
+
       <div class="thumbnail">
-        <img
-          src="https://images.unsplash.com/photo-1596003906949-67221c37965c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          class="sec2-img"
-        />
+        <img src="456.jpg" alt="" class="sec2-img" />
       </div>
     </section>
+    <!-- section 2 end -->
+    <!-- ------------------------------------- -->
 
+    <!-- section 3 start -->
     <section class="section left">
       <div class="paras">
         <p class="para text-big">Education in Pakistan</p>
@@ -73,22 +89,23 @@
           assists in curriculum development, accreditation and the financing of
           research and development. Article 25-A of the Constitution of Pakistan
           obligates the state to provide free and compulsory quality education
-          to children of the age group 5 to 16 years.</p>
-          <p class="sub-para text-small"> "The State shall provide
-          free and compulsory education to all children of the age of five to
-          sixteen years in such a manner as may be determined by law".
+          to children of the age group 5 to 16 years.
+        </p>
+        <p class="sub-para text-small">
+          "The State shall provide free and compulsory education to all children
+          of the age of five to sixteen years in such a manner as may be
+          determined by law".
+        </p>
       </div>
+
       <div class="thumbnail">
-        <img
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          class="sec2-img"
-          width="400"
-          height="350"
-        />
+        <img src="123.jpg" alt="" class="sec2-img" width="400" height="350" />
       </div>
     </section>
+    <!-- section 3 end -->
+    <!-- ------------------------------------------ -->
 
+    <!-- section 4 start -->
     <section class="section">
       <div class="paras">
         <p class="para text-big">Women Education</p>
@@ -96,12 +113,12 @@
           Female education is a catch-all term for a complex set of issues and
           debates surrounding education (primary education, secondary education,
           tertiary education, and health education in particular) for girls and
-          women. It is frequently called girls' education or women's
-          education. It includes areas of gender equality and access to
-          education. The education of women and girls is important for the
-          alleviation of poverty. Broader related topics include scientific
-          education and religious education for women, in which education is
-          divided along gender lines.
+          women. It is frequently called girls' education or women's education.
+          It includes areas of gender equality and access to education. The
+          education of women and girls is important for the alleviation of
+          poverty. Broader related topics include scientific education and
+          religious education for women, in which education is divided along
+          gender lines.
         </p>
       </div>
       <div class="thumbnail">
@@ -114,25 +131,75 @@
         />
       </div>
     </section>
-    
+    <!-- section 4 end -->
+    <!-- ------------------------------------------ -->
 
-    <section class="contact">
+    <!-- contact section -->
+    <section class="contact" id="contact">
       <h2 class="text-center">Contact Us</h2>
       <div class="form">
-        <input  class="form-input" type="text" name="name" id="name" placeholder="Enter Your name" required>
-        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your phone">
-        <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
-        <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern"></textarea>
-        <button class="btn btn-sm btn-dark">Submit</button>
+        <!-- form  -->
+        <form id="myForm">
+          <label for="name"></label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br />
+
+          <label for="email"></label>
+          <input
+            class="form-input"
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone"
+            required
+          />
+          <br />
+
+          <label for="email"></label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br />
+
+          <textarea
+            class="form-input"
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Elaborate your concern"
+          ></textarea>
+
+          <button class="btn btn-sm btn123" id="submitButton" type="submit">
+            Submit
+          </button>
+        </form>
+        <p id="error-message" style="color: red"></p>
       </div>
-
     </section>
+    <!-- end of contact section -->
+    <!-- --------------------------------------- -->
 
+    <!-- footer start -->
     <footer class="background">
       <p class="text-footer">
         Copyright 2025 www.Education.com - All rights reserved
       </p>
-      
     </footer>
+    <!-- footer end -->
+    <!-- link javascript file -->
+    <script src="resp.js"></script>
   </body>
 </html>
