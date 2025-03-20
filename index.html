@@ -3,203 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educational WebPage</title>
-    <!-- link css file -->
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- start of navbar -->
-    <!-- left side of navbar -->
-    <nav class="navbar background h-nav-resp">
-      <ul class="navList v-class-resp">
-        <div class="logo"><img src="logo1.avif" alt="logo" /></div>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <!-- <li><a href="#services">Services</a></li> -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <!-- right side of navbar -->
-      <div class="rightNav v-class-resp">
-        <input id="search" type="text" name="search" />
-        <button class="btn btn-sm">Search</button>
-      </div>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-    <!-- end of nav bar -->
-    <!-- ----------------------------------- -->
-    <!-- section 1 start -->
-    <section class="background firstSection" id="home">
-      <div class="box-main">
-        <div class="firstHalf">
-          <p class="text-big">The Future of Education is here</p>
-          <p class="text-small">
-            Welcome to our education website, a hub dedicated to empowering
-            learners of all ages. Join us today and take the next step in your
-            educational journey!
-          </p>
-          <div class="buttons">
-            <button class="btn" id="enrollButton">Enroll</button>
-            <button class="btn" id="exploreButton">Explore</button>
-          </div>
-        </div>
-        <div class="secondHalf">
-          <img src="img2.webp" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- section 1 end -->
-    <!-- ---------------------------------------- -->
-
-    <!-- section 2 start -->
-    <section class="section" id="about">
-      <div class="paras">
-        <p class="para text-big">Education is the key to success</p>
-        <p class="sub-para text-small">
-          Education is the transmission of knowledge, skills, and character
-          traits and manifests in various forms. Formal education occurs within
-          a structured institutional framework, such as public schools,
-          following a curriculum. Non-formal education also follows a structured
-          approach but occurs outside the formal schooling system, while
-          informal education entails unstructured learning through daily
-          experiences.Formal and non-formal education are categorized into
-          levels, including early childhood education, primary education,
-          secondary education, and tertiary education. Other classifications
-          focus on teaching methods.
+    <section class="hero_image">
+      <div class="hero_wrapper">
+        <h1>THE FOOD YOU LOVE</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odit
+          eveniet quia magnam. Nemo et quae fuga consectetur cupiditate. Atque!
         </p>
-      </div>
-
-      <div class="thumbnail">
-        <img src="456.jpg" alt="" class="sec2-img" />
-      </div>
-    </section>
-    <!-- section 2 end -->
-    <!-- ------------------------------------- -->
-
-    <!-- section 3 start -->
-    <section class="section left">
-      <div class="paras">
-        <p class="para text-big">Education in Pakistan</p>
-        <p class="sub-para text-small">
-          Education in Pakistan is overseen by the Federal Ministry of Education
-          and the provincial governments, while the federal government mostly
-          assists in curriculum development, accreditation and the financing of
-          research and development. Article 25-A of the Constitution of Pakistan
-          obligates the state to provide free and compulsory quality education
-          to children of the age group 5 to 16 years.
-        </p>
-        <p class="sub-para text-small">
-          "The State shall provide free and compulsory education to all children
-          of the age of five to sixteen years in such a manner as may be
-          determined by law".
-        </p>
-      </div>
-
-      <div class="thumbnail">
-        <img src="123.jpg" alt="" class="sec2-img" width="400" height="350" />
-      </div>
-    </section>
-    <!-- section 3 end -->
-    <!-- ------------------------------------------ -->
-
-    <!-- section 4 start -->
-    <section class="section">
-      <div class="paras">
-        <p class="para text-big">Women Education</p>
-        <p class="sub-para text-small">
-          Female education is a catch-all term for a complex set of issues and
-          debates surrounding education (primary education, secondary education,
-          tertiary education, and health education in particular) for girls and
-          women. It is frequently called girls' education or women's education.
-          It includes areas of gender equality and access to education. The
-          education of women and girls is important for the alleviation of
-          poverty. Broader related topics include scientific education and
-          religious education for women, in which education is divided along
-          gender lines.
-        </p>
-      </div>
-      <div class="thumbnail">
-        <img
-          src="https://media.istockphoto.com/id/1969628114/photo/woman-using-laptop-when-working-from-home-office.jpg?s=1024x1024&w=is&k=20&c=J6lnBv7I4qvbLv3q__j8dZXFI97ssN-aTLAtg0ZpSsI="
-          alt=""
-          class="sec2-img"
-          width="400"
-          height="350"
-        />
-      </div>
-    </section>
-    <!-- section 4 end -->
-    <!-- ------------------------------------------ -->
-
-    <!-- contact section -->
-    <section class="contact" id="contact">
-      <h2 class="text-center">Contact Us</h2>
-      <div class="form">
-        <!-- form  -->
-        <form id="myForm">
-          <label for="name"></label>
+        <span>post</span>
+        <form class="form_code">
           <input
-            class="form-input"
+            class="post_code"
             type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
+            placeholder="Enter your post code"
           />
-          <br />
-
-          <label for="email"></label>
-          <input
-            class="form-input"
-            type="phone"
-            id="phone"
-            name="phone"
-            placeholder="Enter your phone"
-            required
-          />
-          <br />
-
-          <label for="email"></label>
-          <input
-            class="form-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <br />
-
-          <textarea
-            class="form-input"
-            name="text"
-            id="text"
-            cols="30"
-            rows="10"
-            placeholder="Elaborate your concern"
-          ></textarea>
-
-          <button class="btn btn-sm btn123" id="submitButton" type="submit">
-            Submit
-          </button>
+          <button type="submit">Find Food</button>
         </form>
-        <p id="error-message" style="color: red"></p>
       </div>
     </section>
-    <!-- end of contact section -->
-    <!-- --------------------------------------- -->
+    <section class="product">
+      <div class="product_list_item">
+        <img
+          class="img_responsive"
+          src="images.jpeg"
+          alt=""
+          height="250"
+          width="400"
+        />
+        <h2 class="product_heading">Food 1</h2>
+        <p>
+          Nihari is a rich and flavorful slow-cooked stew. Served with naan or
+          paratha, especially enjoyed as a hearty
+          breakfast in Pakistan and India.
+        </p>
+      </div>
 
-    <!-- footer start -->
-    <footer class="background">
-      <p class="text-footer">
-        Copyright 2025 www.Education.com - All rights reserved
-      </p>
-    </footer>
-    <!-- footer end -->
-    <!-- link javascript file -->
-    <script src="resp.js"></script>
+      <div class="product_list_item">
+        <img
+          class="img_responsive"
+          src="cover-image-25-1.jpg"
+          alt=""
+          height="250"
+          width="400"
+        />
+        <h2 class="product_heading">Food 2</h2>
+        <p>
+            Karahi is a popular South Asian dish cooked in a deep, wok-like pan
+          called a "karahi." It features tender chicken, mutton, or beef
+          stir-fried 
+           </p>
+      </div>
+
+      <div class="product_list_item">
+        <img
+          class="img_responsive"
+          src="karachi-chicken-biryani-11.jpg"
+          alt=""
+          height="250"
+          width="400"
+        />
+        <h2 class="product_heading">Food 3</h2>
+        <p>
+            Biryani is a fragrant and colorful rice dish layered with spiced meat,
+            vegetables, or seafood.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
